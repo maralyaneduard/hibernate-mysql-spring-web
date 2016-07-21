@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+ 
+    <body>
+        <ui:composition>
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" ><h:outputLink value="index.xhtml" rendered="true">Home</h:outputLink></li>
+                            <li role="presentation" class="userInfo"><h:outputLink value="login.xhtml" rendered="true">login</h:outputLink></li>
+                            <li role="presentation" class="userInfo"><h:outputLink rendered="true">logout</h:outputLink></li>
+                            <li role="presentation" class="userInfo"><h:outputLink class="not-active" onclick="return false;" rendered="true">UserName</h:outputLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </ui:composition>
+    </body>
+</html>
